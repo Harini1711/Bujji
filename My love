@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Congratulations My Love ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #333;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      text-align: center;
+      max-width: 400px;
+      animation: fadeIn 2s ease;
+    }
+
+    h1 {
+      color: #ff4b5c;
+    }
+
+    .heart {
+      font-size: 40px;
+      animation: heartbeat 1s infinite;
+    }
+
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      background: #ff4b5c;
+      color: white;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #e8434f;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="heart">❤️</div>
+    <h1>Congratulations My Love!</h1>
+    <p>
+      I am so proud of you for your new job! 🎉<br><br>
+      Your hard work, dedication, and passion have paid off.
+      This is just the beginning of amazing things ahead.
+    </p>
+    <p>
+      Keep shining and chasing your dreams ✨<br>
+      I will always be your biggest supporter ❤️
+    </p>
+    <button class="btn" onclick="showMessage()">Click for a Surprise</button>
+  </div>
+
+  <script>
+    function showMessage() {
+      alert("I love you so much ❤️ I'm incredibly proud of you!");
+    }
+  </script>
+</body>
+</html>
